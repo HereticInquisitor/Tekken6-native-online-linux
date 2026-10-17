@@ -44,4 +44,4 @@ Please send the files from the package folder: `native\build.log` (build problem
 ## Credits
 
 Big thanks to **mahmoud-mess** for [tekken6-recomp](https://github.com/mahmoud-mess/tekken6-recomp) - his Tekken 6
-recompilation work gave this project speed-ups of the recompiled code and of the graphics. Thank you!
+recompilation work gave this project faster recompiled code. Thank you!
