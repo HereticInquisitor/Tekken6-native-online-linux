@@ -40,3 +40,8 @@ game code, the launcher asks you to build the game again (your game data is kept
 ## Bug reports
 
 Please send the files from the package folder: `native\build.log` (build problems) and the newest log of the game.
+
+## Credits
+
+Big thanks to **mahmoud-mess** for [tekken6-recomp](https://github.com/mahmoud-mess/tekken6-recomp) - his Tekken 6
+recompilation work gave this project speed-ups of the recompiled code and of the graphics. Thank you!
