@@ -3,7 +3,7 @@
 Tekken 6 for Xbox 360 running natively on Windows (recompiled, no emulator) with rollback netcode (GGPO principle) and
 an online lobby in the launcher.
 
-**This is a test release (v0.1).** Expect bugs; please report them.
+Found a bug? Please report it (see **Bug reports** below).
 
 Download: see **Releases** (`tekken6_native_online.zip`). The package contains **no part of the game**. You build the
 game yourself from **your own copy** of Tekken 6 for Xbox 360 (a disc image `.iso`). Both players must use the same
@@ -34,12 +34,18 @@ open between matches. Matches are first to 3 rounds. A stable connection matters
 
 ## Updating
 
-The launcher looks for new versions and updates itself with one click (from v0.2 on). After an update that changes the
+The launcher looks for new versions and updates itself with one click. After an update that changes the
 game code, the launcher asks you to build the game again (your game data is kept).
 
 ## Bug reports
 
 Please send the files from the package folder: `native\build.log` (build problems) and the newest log of the game.
+
+## Source code
+
+The source code is open: [Ekspym/tekken6-native-online-source](https://github.com/Ekspym/tekken6-native-online-source).
+It is published there without the full development history, because I don't want every work-in-progress commit to be
+public. Every patch released here is also added there as one commit, so the source always matches the latest release.
 
 ## Credits
 
