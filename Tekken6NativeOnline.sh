@@ -77,6 +77,8 @@ export WINEESYNC=1
 export PULSE_LATENCY_MSEC=30
 export WINEDEBUG=-all
 export VKD3D_CONFIG=dxr11,dxr
+# Prevent Wine crash on unimplemented mscms.dll color profile functions
+export WINEDLLOVERRIDES="mscms=d;${WINEDLLOVERRIDES:-}"
 
 # 4. Launch
 if [ "$RUNNER_TYPE" = "proton" ]; then
