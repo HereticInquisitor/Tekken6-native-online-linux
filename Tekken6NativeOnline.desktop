@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=Tekken 6 Native Online
+Comment=Tekken 6 Xbox 360 PC Recompilation with Rollback Netcode
+Exec="/home/ayush/t6_linux/Tekken6NativeOnline/Tekken6NativeOnline.sh"
+Path=/home/ayush/t6_linux/Tekken6NativeOnline
+Icon=/home/ayush/t6_linux/Tekken6NativeOnline/app.png
+Terminal=false
+Type=Application
+Categories=Game;ActionGame;
+StartupNotify=true
