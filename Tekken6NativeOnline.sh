@@ -67,7 +67,7 @@ fi
 
 echo "[Tekken6 Linux] Using $RUNNER_TYPE: $RUNNER"
 
-# 3. Setup Wine Prefix
+# 3. Setup Wine Prefix & Overrides
 PFX_DIR="$HOME/.local/share/tekken6_native_online/pfx"
 mkdir -p "$PFX_DIR"
 
@@ -77,8 +77,14 @@ export WINEESYNC=1
 export PULSE_LATENCY_MSEC=30
 export WINEDEBUG=-all
 export VKD3D_CONFIG=dxr11,dxr
-# Prevent Wine crash on unimplemented mscms.dll color profile functions
 export WINEDLLOVERRIDES="mscms=d;${WINEDLLOVERRIDES:-}"
+
+# Ensure mscms is disabled in registry to prevent unimplemented WcsCreateIccProfile abort
+if [ -f "$PFX_DIR/user.reg" ]; then
+    if ! grep -q '"mscms"=""' "$PFX_DIR/user.reg" 2>/dev/null; then
+        printf '\n[Software\\\\Wine\\\\DllOverrides]\n"mscms"=""\n' >> "$PFX_DIR/user.reg"
+    fi
+fi
 
 # 4. Launch
 if [ "$RUNNER_TYPE" = "proton" ]; then
